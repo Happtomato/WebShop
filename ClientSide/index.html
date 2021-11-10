@@ -8,61 +8,72 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="stylesheet.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <title>Home</title>
+
+    <script>
+        $(document).ready(function () {
+            $("#navbarDropdown").click(function () {
+                $(".dropdown-menu").toggle();
+            })
+        });
+    </script>
+
 </head>
 
 <body>
     <header>
         <nav class="navbar navbar-expand-sm navbar-light bg-light">
             <a class="navbar-brand" href="index.html">
-                <img src="Pictures/cola.png" width="30" height="30" alt="">
+                <img src="Pictures/c. b..svg" width="30" height="30" alt="">
             </a>
             <div class="collapse navbar-collapse width">
                 <ul class="navbar-nav mr-auto">
-                    <li class="nav-item nav-item2"><a class="nav-link" href="#">Welcome</a></li>
-                    <li class="nav-item nav-item2"><a class="nav-link" href="#">Shop</a></li>
-                    <li class="nav-item nav-item2"><a class="nav-link" href="#">Account</a></li>
+                    <li class="nav-item nav-item2 btn-hovereffect rounded-pill"><a class="nav-link"
+                            href="index.html">Welcome</a></li>
+                    <li class="nav-item nav-item2 btn-hovereffect rounded-pill"><a class="nav-link" href="#">Shop</a>
+                    </li>
+                    <li class="nav-item nav-item2 btn-hovereffect rounded-pill"><a class="nav-link" href="#">Account</a>
+                    </li>
                 </ul>
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          Dropdown
+                <ul class="navbar-nav ml-auto icon-resize">
+                    <li class="dropdown nav-item nav-item2" style="margin-top: 10px;"><a href=""><img
+                                src="Pictures/Icon material-account-circle.svg" alt=""
+                                style="max-width: 80%; max-height:80%"></a></li>
+                    <li class="dropdown nav-item nav-item2" style="margin-top: 7px;"><a href=""><img
+                                src="Pictures/Icon awesome-shopping-basket.svg" alt=""
+                                style="max-width: 80%; max-height:80%"></a></li>
+                    <li class="nav-item dropdown nav-item2" style="margin-top: 4px;">
+                        <a class="nav-link" href="#" id="navbarDropdown" role="button" aria-haspopup="true"
+                            aria-expanded="false">
+                            <img src="Pictures/Icon feather-menu.svg" alt="" style="max-width: 80%; max-height:80%">
                         </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                          <a class="dropdown-item" href="#">Action</a>
-                          <a class="dropdown-item" href="#">Another action</a>
-                          <div class="dropdown-divider"></div>
-                          <a class="dropdown-item" href="#">Something else here</a>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Welcome</a>
+                            <a class="dropdown-item" href="#">Shop</a>
+                            <a class="dropdown-item" href="#">Account</a>
                         </div>
-                      </li>
+                    </li>
                 </ul>
             </div>
         </nav>
     </header>
 
 
-    
 
-    <main>
 
-        <form action="action.php" method="post">
-            <p>Ihr Name: <input type="text" name="name" /></p>
-            <p>Ihr Alter: <input type="text" name="alter" /></p>
-            <p>Ihr Name: <input type="text" name="name" /></p>
-            <p>Ihr Alter: <input type="text" name="alter" /></p>
-            <p>Ihr Name: <input type="text" name="name" /></p>
-            <p>Ihr Alter: <input type="text" name="alter" /></p>
-            <p><input type="submit" /></p>
-
-            <a href="User.html"><p>deine mom</p></a>
-        </form>
-
+    <main class="container">
+        <div class="col">
+            <div class="row" style="background-color: red;"><h1></h1></div>
+            <div class="row"><h1></h1></div>
+            <div class="row"><h1></h1></div>
+            <div class="row" style="background-color:blue;"><h1></h1></div>
+        </div>
     </main>
 
 
     <footer>
-
+        
     </footer>
 </body>
 
