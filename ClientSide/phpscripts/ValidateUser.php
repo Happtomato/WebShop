@@ -32,10 +32,29 @@ function isValid(){
 
 }
 
-function signIn(){
+function getUserID(){
 
     if($this->isValid()){
+        $servername = "localhost";
+        $username = "root";
+        $password = "D0minik2005";
+        $dbname = "webshop";
+
+// Create connection
+        $conn = new mysqli($servername, $username, $password, $dbname);
+// Check connection
+        if ($conn->connect_error) {
+            die("Connection failed: " . $conn->connect_error);
+        }
+
+        
+
+        $sql = "SELECT user_ID FROM useraccounts WHERE email ";
+        $result = $conn->query($sql);
+
+        $conn->close();
 
     }
+
 }
 }

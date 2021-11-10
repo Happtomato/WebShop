@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="caba9bfc-3ac8-4b48-a9e8-e50ea4852e19" name="Changes" comment="" />
+    <list default="true" id="caba9bfc-3ac8-4b48-a9e8-e50ea4852e19" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ClientSide/phpscripts/ValidateUser.php" beforeDir="false" afterPath="$PROJECT_DIR$/ClientSide/phpscripts/ValidateUser.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ClientSide/phpscripts/createNewUser.php" beforeDir="false" afterPath="$PROJECT_DIR$/ClientSide/phpscripts/createNewUser.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -45,6 +49,7 @@
       <updated>1636533912263</updated>
       <workItem from="1636533915863" duration="48000" />
       <workItem from="1636535100599" duration="2573000" />
+      <workItem from="1636538756491" duration="943000" />
     </task>
     <servers />
   </component>
@@ -61,5 +66,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>
