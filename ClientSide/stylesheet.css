@@ -1,8 +1,21 @@
 .nav-item2 {
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 25px;
+    padding-right: 25px;
 }
 
 .width {
     width: 100%;
+}
+
+.btn-hovereffect {
+    
+}
+
+.btn-hovereffect:hover {
+    background-color:lightgray;
+    transition:500ms;
+}
+
+.icon-resize {
+    font-size: 0.5rem !important;
 }
