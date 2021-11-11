@@ -5,9 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="stylesheet.css">
     <title>Home</title>
 </head>
 
@@ -29,7 +28,17 @@
 
 
     <main>
-
+        <form action="phpscripts/createNewUser.php" method="post">
+            <p>Ihr Name: <input type="text" name="name" /></p>
+            <p>Ihr Vorname: <input type="text" name="preName" /></p>
+            <p>Ihr Geburtsdatum: <input type="text" name="birthday" /></p>
+            <p>Ihre Land: <input type="text" name="country" /></p>
+            <p>Ihre Adresse: <input type="text" name="adress" /></p>
+            <p>Ihre Email: <input type="text" name="email" /></p>
+            <p>Ihr Passwort: <input type="text" name="password" /></p>
+            <p>Ihre Postleitzahl: <input type="text" name="zip" /></p>
+            <p><input type="submit" /></p>
+        </form>
     </main>
 
 

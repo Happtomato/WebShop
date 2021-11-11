@@ -1,7 +1,7 @@
 <?php
 
-class ValidateUser
-{
+class ValidateUser{
+
 function isValid(){
 
     $servername = "localhost";
@@ -32,9 +32,10 @@ function isValid(){
 
 }
 
-function getUserID(){
+function getUserID()
+{
 
-    if($this->isValid()){
+    if ($this->isValid()) {
         $servername = "localhost";
         $username = "root";
         $password = "D0minik2005";
@@ -47,14 +48,14 @@ function getUserID(){
             die("Connection failed: " . $conn->connect_error);
         }
 
-        
-
         $sql = "SELECT user_ID FROM useraccounts WHERE email ";
         $result = $conn->query($sql);
 
         $conn->close();
 
+        return $result;
     }
-
+    echo "error";
+    return "";
 }
 }
