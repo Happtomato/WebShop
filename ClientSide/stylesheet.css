@@ -29,7 +29,6 @@ html, body {margin: 0; height: 100%; overflow: hidden}
 #index-img-down-right {
     position: absolute;
     right: 0;
-    down: 0;
 }
 
 #index-img-smiley {
@@ -37,14 +36,57 @@ html, body {margin: 0; height: 100%; overflow: hidden}
     max-height: 100%;
 }
 
+#index-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 #index-main-img {
-    height: 60%;
+    height: 70vh;
 }
 
 #index-right-backimg {
     background-image: url(Pictures/Pfad_7.svg);
 }
 
+#index-right-textblock {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+#index-right-textblock-title {
+    font-size: 2.5vw;
+    font-size: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#index-right-textblock-text {
+    font-size: 1.5vw;
+    font-size: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
 #index-left-img {
     background-image: url(Pictures/Pfad_8.svg);
+}
+
+#index-left-logo {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    transform: rotate(-90deg);
+}
+
+#index-left-logo-CandyBay {
+    font-size: 4vw;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#index-left-logo-subtext {
+    font-size: 2.5vw;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-decoration: underline;
+    text-decoration-color: red;
 }
