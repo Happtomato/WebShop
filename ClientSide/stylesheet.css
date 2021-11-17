@@ -19,3 +19,7 @@
 .icon-resize {
     font-size: 0.5rem !important;
 }
+
+.active-btn {
+    background-color: wheat !important;
+}
