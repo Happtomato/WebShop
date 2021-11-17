@@ -1,17 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="caba9bfc-3ac8-4b48-a9e8-e50ea4852e19" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/ClientSide/phpscripts/dbcontroller.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ClientSide/phpscripts/icon-delete.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ClientSide/phpscripts/index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ClientSide/phpscripts/phpStyle.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ClientSide/phpscripts/tblproduct.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/ce8fd048-9a16-4cca-99ba-e45f242b5315.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/ce8fd048-9a16-4cca-99ba-e45f242b5315.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ClientSide/Pictures/Fanta Blau.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ClientSide/phpscripts/addToBasket.php" beforeDir="false" />
+    <list default="true" id="caba9bfc-3ac8-4b48-a9e8-e50ea4852e19" name="Changes" comment="Rnd Stuff">
+      <change beforePath="$PROJECT_DIR$/ClientSide/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/ClientSide/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,8 +73,16 @@
       <workItem from="1637075810957" duration="118000" />
       <workItem from="1637131575237" duration="205000" />
       <workItem from="1637131908531" duration="2061000" />
-      <workItem from="1637134006584" duration="685000" />
+      <workItem from="1637134006584" duration="817000" />
     </task>
+    <task id="LOCAL-00001" summary="Rnd Stuff">
+      <created>1637134714898</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1637134714898</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -100,5 +99,9 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Rnd Stuff" />
+    <option name="LAST_COMMIT_MESSAGE" value="Rnd Stuff" />
   </component>
 </project>
