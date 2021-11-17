@@ -9,10 +9,6 @@ html, body {margin: 0; height: 100%; overflow: hidden}
     width: 100%;
 }
 
-.btn-hovereffect {
-    
-}
-
 .btn-hovereffect:hover {
     background-color:lightgray;
     transition:500ms;
@@ -52,13 +48,13 @@ html, body {margin: 0; height: 100%; overflow: hidden}
 
 #index-right-textblock {
     display: flex;
-    height: 100vh;
+    height: 70vh;
     justify-content: center;
     align-items: center;
 }
 
 #index-right-textblock-title {
-    font-size: 2.5vw;
+    font-size: 3vw;
     font-size: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
