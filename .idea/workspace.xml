@@ -2,11 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="caba9bfc-3ac8-4b48-a9e8-e50ea4852e19" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/ClientSide/phpscripts/addToBasket.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClientSide/phpscripts/dbcontroller.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClientSide/phpscripts/icon-delete.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClientSide/phpscripts/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClientSide/phpscripts/phpStyle.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClientSide/phpscripts/tblproduct.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/ce8fd048-9a16-4cca-99ba-e45f242b5315.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/ce8fd048-9a16-4cca-99ba-e45f242b5315.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ClientSide/phpscripts/ValidateUser.php" beforeDir="false" afterPath="$PROJECT_DIR$/ClientSide/phpscripts/ValidateUser.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ClientSide/shop.html" beforeDir="false" afterPath="$PROJECT_DIR$/ClientSide/shop.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ClientSide/Pictures/Fanta Blau.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ClientSide/phpscripts/addToBasket.php" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,6 +20,13 @@
   </component>
   <component name="ComposerSettings">
     <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -28,7 +40,9 @@
     </file-type-list>
   </component>
   <component name="ProjectId" id="20iiehgmTYjzRtsjiODDNwwYk4s" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -38,8 +52,17 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/simple-php-shopping-cart" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\domin\Documents\GitHub\WebShop\ClientSide\phpscripts" />
+      <recent name="C:\Users\domin\Documents\GitHub\WebShop\ClientSide\" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -53,6 +76,13 @@
       <workItem from="1636535100599" duration="2573000" />
       <workItem from="1636538756491" duration="1538000" />
       <workItem from="1636612926635" duration="2749000" />
+      <workItem from="1636615738163" duration="510000" />
+      <workItem from="1636619429723" duration="293000" />
+      <workItem from="1637074821064" duration="23000" />
+      <workItem from="1637075810957" duration="118000" />
+      <workItem from="1637131575237" duration="205000" />
+      <workItem from="1637131908531" duration="2061000" />
+      <workItem from="1637134006584" duration="685000" />
     </task>
     <servers />
   </component>
