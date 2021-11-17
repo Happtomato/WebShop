@@ -3,30 +3,44 @@ session_start();
 require_once("dbcontroller.php");
 $db_handle = new DBController();
 if(!empty($_GET["action"])) {
+
     switch($_GET["action"]) {
+
         case "add":
             if(!empty($_POST["quantity"])) {
                 $productByCode = $db_handle->runQuery("SELECT * FROM inventory WHERE ItemCode='" . $_GET["code"] . "'");
-                $itemArray = array($productByCode[0]["code"]=>array('name'=>$productByCode[0]["name"], 'code'=>$productByCode[0]["code"], 'quantity'=>$_POST["quantity"], 'ItemPrice'=>$productByCode[0]["price"], 'ItemImage'=>$productByCode[0]["image"]));
+                $itemArray = array($productByCode[0]["ItemCode"]=>array('name'=>$productByCode[0]["ItemName"], 'code'=>$productByCode[0]["ItemCode"], 'quantity'=>$_POST["quantity"], 'price'=>$productByCode[0]["ItemPrice"], 'image'=>$productByCode[0]["ItemImage"]));
 
+                //look if any item is in the basket
                 if(!empty($_SESSION["cart_item"])) {
-                    if(in_array($productByCode[0]["code"],array_keys($_SESSION["cart_item"]))) {
+                    //look if item already in the basket
+                    if(in_array($productByCode[0]["ItemCode"],array_keys($_SESSION["cart_item"]))) {
+                        //go through array
                         foreach($_SESSION["cart_item"] as $k => $v) {
-                            if($productByCode[0]["code"] == $k) {
+                            //search for item
+                            if($productByCode[0]["ItemCode"] == $k) {
+                                //if empty set quantity 0
                                 if(empty($_SESSION["cart_item"][$k]["quantity"])) {
                                     $_SESSION["cart_item"][$k]["quantity"] = 0;
                                 }
+                                //add to quantity
+                                else{
                                 $_SESSION["cart_item"][$k]["quantity"] += $_POST["quantity"];
+                                }
                             }
                         }
+                        //add a new item into the session
                     } else {
-                        $_SESSION["cart_item"] = array_merge($_SESSION["cart_item"],$itemArray);
+                        $_SESSION["cart_item"] = $_SESSION["cart_item"] + $itemArray;
+
                     }
+                    //start a new session
                 } else {
                     $_SESSION["cart_item"] = $itemArray;
                 }
             }
             break;
+
         case "remove":
             if(!empty($_SESSION["cart_item"])) {
                 foreach($_SESSION["cart_item"] as $k => $v) {
@@ -37,6 +51,7 @@ if(!empty($_GET["action"])) {
                 }
             }
             break;
+
         case "empty":
             unset($_SESSION["cart_item"]);
             break;
@@ -49,6 +64,7 @@ if(!empty($_GET["action"])) {
     <link href="phpStyle.css" type="text/css" rel="stylesheet" />
 </HEAD>
 <BODY>
+<!-- Shopping Cart -->
 <div id="shopping-cart">
     <div class="txt-heading">Shopping Cart</div>
 
@@ -78,7 +94,7 @@ if(!empty($_GET["action"])) {
                     <td style="text-align:right;"><?php echo $item["quantity"]; ?></td>
                     <td  style="text-align:right;"><?php echo "$ ".$item["price"]; ?></td>
                     <td  style="text-align:right;"><?php echo "$ ". number_format($item_price,2); ?></td>
-                    <td style="text-align:center;"><a href="index.php?action=remove&code=<?php echo $item["code"]; ?>" class="btnRemoveAction"><img src="../../../Documents/GitHub/WebShop/ClientSide/phpscripts/icon-delete.png" alt="Remove Item" /></a></td>
+                    <td style="text-align:center;"><a href="index.php?action=remove&code=<?php echo $item["code"]; ?>" class="btnRemoveAction"><img src="icon-delete.png" alt="Remove Item" /></a></td>
                 </tr>
                 <?php
                 $total_quantity += $item["quantity"];
@@ -103,19 +119,21 @@ if(!empty($_GET["action"])) {
     ?>
 </div>
 
+
+<!-- List of Products -->
 <div id="product-grid">
     <div class="txt-heading">Products</div>
     <?php
-    $product_array = $db_handle->runQuery("SELECT * FROM tblproduct ORDER BY id ASC");
+    $product_array = $db_handle->runQuery("SELECT * FROM inventory ORDER BY Item_ID ASC");
     if (!empty($product_array)) {
         foreach($product_array as $key=>$value){
             ?>
             <div class="product-item">
-                <form method="post" action="index.php?action=add&code=<?php echo $product_array[$key]["code"]; ?>">
-                    <div class="product-image"><img src="<?php echo $product_array[$key]["image"]; ?>"></div>
+                <form method="post" action="index.php?action=add&code=<?php echo $product_array[$key]["ItemCode"]; ?>">
+                   <!-- <div class="product-image"><img src="<?php echo $product_array[$key]["ItemImage"]; ?>"></div> -->
                     <div class="product-tile-footer">
-                        <div class="product-title"><?php echo $product_array[$key]["name"]; ?></div>
-                        <div class="product-price"><?php echo "$".$product_array[$key]["price"]; ?></div>
+                        <div class="product-title"><?php echo $product_array[$key]["ItemName"]; ?></div>
+                        <div class="product-price"><?php echo "$".$product_array[$key]["ItemPrice"]; ?></div>
                         <div class="cart-action"><input type="text" class="product-quantity" name="quantity" value="1" size="2" /><input type="submit" value="Add to Cart" class="btnAddAction" /></div>
                     </div>
                 </form>
