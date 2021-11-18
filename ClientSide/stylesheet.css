@@ -1,4 +1,9 @@
-html, body {margin: 0; height: 100%; overflow: hidden}
+html,
+body {
+    margin: 0;
+    height: 100%;
+    overflow: hidden
+}
 
 .nav-item2 {
     padding-left: 25px;
@@ -10,8 +15,8 @@ html, body {margin: 0; height: 100%; overflow: hidden}
 }
 
 .btn-hovereffect:hover {
-    background-color:lightgray;
-    transition:500ms;
+    background-color: lightgray;
+    transition: 500ms;
 }
 
 .icon-resize {
@@ -55,12 +60,12 @@ html, body {margin: 0; height: 100%; overflow: hidden}
 
 #index-right-textblock-title {
     font-size: 3vw;
-    font-size: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Dosis', sans-serif;
 }
 
 #index-right-textblock-text {
     font-size: 1.5vw;
-    font-size: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Dosis', Sans-serif;
 }
 
 #index-left-img {
@@ -73,11 +78,14 @@ html, body {margin: 0; height: 100%; overflow: hidden}
     justify-content: center;
     align-items: center;
     transform: rotate(-90deg);
+    font-family: 'Dosis', Sans-serif;
+    weight: normal;
 }
 
 #index-left-logo-CandyBay {
-    font-size: 4vw;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 4.5vw;
+    font-family: 'Dosis', sans-serif;
+    weight: bold;
 }
 
 #index-left-logo-subtext {
