@@ -2,10 +2,14 @@
 session_start();
 require_once("dbcontroller.php");
 $db_handle = new DBController();
+
+//manipulate the shopping cart
 if(!empty($_GET["action"])) {
+
 
     switch($_GET["action"]) {
 
+        //add a new item to the shopping cart
         case "add":
             if(!empty($_POST["quantity"])) {
                 $productByCode = $db_handle->runQuery("SELECT * FROM inventory WHERE ItemCode='" . $_GET["code"] . "'");
@@ -40,7 +44,7 @@ if(!empty($_GET["action"])) {
                 }
             }
             break;
-
+        //remove item from the shopping cart
         case "remove":
             if(!empty($_SESSION["cart_item"])) {
                 foreach($_SESSION["cart_item"] as $k => $v) {
@@ -51,19 +55,22 @@ if(!empty($_GET["action"])) {
                 }
             }
             break;
-
+        //remove session if the shopping cart is empty
         case "empty":
             unset($_SESSION["cart_item"]);
             break;
     }
 }
 ?>
+
+
 <HTML>
 <HEAD>
     <TITLE>Simple PHP Shopping Cart</TITLE>
     <link href="phpStyle.css" type="text/css" rel="stylesheet" />
 </HEAD>
 <BODY>
+
 <!-- Shopping Cart -->
 <div id="shopping-cart">
     <div class="txt-heading">Shopping Cart</div>
@@ -88,12 +95,14 @@ if(!empty($_GET["action"])) {
             foreach ($_SESSION["cart_item"] as $item){
                 $item_price = $item["quantity"]*$item["price"];
                 ?>
+                    <!-- List the item in the shopping cart -->
                 <tr>
                     <td><img src="<?php echo $item["image"]; ?>" class="cart-item-image" /><?php echo $item["name"]; ?></td>
                     <td><?php echo $item["code"]; ?></td>
                     <td style="text-align:right;"><?php echo $item["quantity"]; ?></td>
                     <td  style="text-align:right;"><?php echo "$ ".$item["price"]; ?></td>
                     <td  style="text-align:right;"><?php echo "$ ". number_format($item_price,2); ?></td>
+                    <!-- button remove item -->
                     <td style="text-align:center;"><a href="index.php?action=remove&code=<?php echo $item["code"]; ?>" class="btnRemoveAction"><img src="icon-delete.png" alt="Remove Item" /></a></td>
                 </tr>
                 <?php
@@ -103,6 +112,7 @@ if(!empty($_GET["action"])) {
             ?>
 
             <tr>
+                <!-- display the total amount -->
                 <td colspan="2" align="right">Total:</td>
                 <td align="right"><?php echo $total_quantity; ?></td>
                 <td align="right" colspan="2"><strong><?php echo "$ ".number_format($total_price, 2); ?></strong></td>
@@ -121,6 +131,7 @@ if(!empty($_GET["action"])) {
 
 
 <!-- List of Products -->
+
 <div id="product-grid">
     <div class="txt-heading">Products</div>
     <?php
@@ -133,7 +144,7 @@ if(!empty($_GET["action"])) {
                    <!-- <div class="product-image"><img src="<?php echo $product_array[$key]["ItemImage"]; ?>"></div> -->
                     <div class="product-tile-footer">
                         <div class="product-title"><?php echo $product_array[$key]["ItemName"]; ?></div>
-                        <div class="product-price"><?php echo "$".$product_array[$key]["ItemPrice"]; ?></div>
+                        <div class="product-price"><?php echo $product_array[$key]["ItemPrice"]."fr"; ?></div>
                         <div class="cart-action"><input type="text" class="product-quantity" name="quantity" value="1" size="2" /><input type="submit" value="Add to Cart" class="btnAddAction" /></div>
                     </div>
                 </form>
