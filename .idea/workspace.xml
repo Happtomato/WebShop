@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="caba9bfc-3ac8-4b48-a9e8-e50ea4852e19" name="Changes" comment="Implementation of Shopping cart and product list">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/ce8fd048-9a16-4cca-99ba-e45f242b5315.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/ce8fd048-9a16-4cca-99ba-e45f242b5315.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ClientSide/phpscripts/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/ClientSide/phpscripts/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ClientSide/phpscripts/tblproduct.sql" beforeDir="false" afterPath="$PROJECT_DIR$/ClientSide/phpscripts/tblproduct.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ClientSide/shop.html" beforeDir="false" afterPath="$PROJECT_DIR$/ClientSide/shop.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,6 +46,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/SQL Dialect" value="MySQL" />
     <property name="last_opened_file_path" value="$USER_HOME$/Downloads/simple-php-shopping-cart" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
@@ -77,6 +79,7 @@
       <workItem from="1637131908531" duration="2061000" />
       <workItem from="1637134006584" duration="10882000" />
       <workItem from="1637213462520" duration="733000" />
+      <workItem from="1637228452471" duration="1959000" />
     </task>
     <task id="LOCAL-00001" summary="Rnd Stuff">
       <created>1637134714898</created>
