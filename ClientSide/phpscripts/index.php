@@ -58,11 +58,14 @@ if(!empty($_GET["action"])) {
             break;
         //remove session if the shopping cart is empty
         case "empty":
-
-            echo "<td><a onClick=\"javascript: return confirm('Please confirm deletion');\" href='delete.php'></a></td><tr>";
                 unset($_SESSION["cart_item"]);
                 break;
-            }
+
+        case "checkout":
+            header("Location: ../account.html");
+            exit;
+    }
+
 
 }
 ?>
@@ -79,7 +82,7 @@ if(!empty($_GET["action"])) {
 <div id="shopping-cart">
     <div class="txt-heading">Shopping Cart</div>
 
-    <button onclick="confirmation()">Empty Cart</button>
+    <a id="btnEmpty" href="index.php?action=empty">Empty Cart</a>
     <?php
     if(isset($_SESSION["cart_item"])){
         $total_quantity = 0;
@@ -124,6 +127,9 @@ if(!empty($_GET["action"])) {
             </tr>
             </tbody>
         </table>
+
+        <a id="btnEmpty" href="index.php?action=checkout">Checkout</a>
+
         <?php
     } else {
         ?>
@@ -132,11 +138,6 @@ if(!empty($_GET["action"])) {
     }
     ?>
 </div>
-
-<<<<<<< Updated upstream
-
-=======
->>>>>>> Stashed changes
 <!-- List of Products -->
 
 <div id="product-grid">

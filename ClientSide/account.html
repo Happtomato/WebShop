@@ -34,7 +34,7 @@
                     <li class="nav-item nav-item2 btn-hovereffect rounded-pill"><a class="nav-link"
                             href="phpscripts/index.php">Shop</a>
                     </li>
-                    <li class="nav-item nav-item2 btn-hovereffect rounded-pill active-btn"><a class="nav-link"
+                    <li class="nav-item nav-item2 btn-hovereffect rounded-pill active-btn"><a  class="nav-link"
                             href="account.html">Account</a>
                     </li>
                 </ul>
@@ -74,14 +74,14 @@
 
         <div class="col-6" id="index-main">
             <!--Form to add new user to data base-->
-            <form action="phpscripts/createNewUser.php" method="post">
+            <form action="phpscripts/checkout.php" method="post">
                 <p>Ihr Name: <input type="text" name="name" /></p>
                 <p>Ihr Vorname: <input type="text" name="preName" /></p>
                 <p>Ihr Geburtsdatum: <input type="text" name="birthday" /></p>
                 <p>Ihre Land: <input type="text" name="country" /></p>
                 <p>Ihre Adresse: <input type="text" name="adress" /></p>
                 <p>Ihre Email: <input type="text" name="email" /></p>
-                <p>Ihr Passwort: <input type="text" name="password" /></p>
+                <p>Ihr Passwort: <input type="password" name="passwd" /></p>
                 <p>Ihre Postleitzahl: <input type="text" name="zip" /></p>
                 <p><input type="submit" /></p>
             </form>
