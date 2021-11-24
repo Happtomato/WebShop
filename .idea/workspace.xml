@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="caba9bfc-3ac8-4b48-a9e8-e50ea4852e19" name="Changes" comment="Implementation of Shopping cart and product list">
-      <change afterPath="$PROJECT_DIR$/ClientSide/phpscripts/delete.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ClientSide/phpscripts/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/ClientSide/phpscripts/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ClientSide/shop.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ClientSide/sript.js" beforeDir="false" afterPath="$PROJECT_DIR$/ClientSide/sript.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,6 +80,7 @@
       <workItem from="1637310591018" duration="13000" />
       <workItem from="1637333913420" duration="4008000" />
       <workItem from="1637650086678" duration="44000" />
+      <workItem from="1637736754208" duration="270000" />
     </task>
     <task id="LOCAL-00001" summary="Rnd Stuff">
       <created>1637134714898</created>
