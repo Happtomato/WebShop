@@ -5,14 +5,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="stylesheet.css">
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <title>Welcome</title>
 
     <script>
-        $(document).ready(function() {
-            $("#navbarDropdown").click(function() {
+        $(document).ready(function () {
+            $("#navbarDropdown").click(function () {
                 $(".dropdown-menu").toggle();
             })
         });
@@ -28,21 +29,27 @@
             </a>
             <div class="collapse navbar-collapse width">
                 <ul class="navbar-nav mr-auto">
-                    <li class="nav-item nav-item2 btn-hovereffect rounded-pill"><a class="nav-link" href="index.html">Welcome</a></li>
-                    <li class="nav-item nav-item2 btn-hovereffect rounded-pill"><a class="nav-link" href="phpscripts/index.php">Shop</a>
+                    <li class="nav-item nav-item2 btn-hovereffect rounded-pill"><a class="nav-link"
+                            href="index.html">Welcome</a></li>
+                    <li class="nav-item nav-item2 btn-hovereffect rounded-pill"><a class="nav-link"
+                            href="phpscripts/index.php">Shop</a>
                     </li>
-                    <li class="nav-item nav-item2 btn-hovereffect rounded-pill active-btn"><a class="nav-link" href="account.html">Account</a>
+                    <li class="nav-item nav-item2 btn-hovereffect rounded-pill active-btn"><a class="nav-link"
+                            href="account.html">Account</a>
                     </li>
                 </ul>
                 <ul class="navbar-nav ml-auto icon-resize">
                     <li class="dropdown nav-item nav-item2" style="margin-top: 10px;">
-                        <a href=""><img src="Pictures/Icon material-account-circle.svg" alt="" style="max-width: 80%; max-height:80%"></a>
+                        <a href=""><img src="Pictures/Icon material-account-circle.svg" alt=""
+                                style="max-width: 80%; max-height:80%"></a>
                     </li>
                     <li class="dropdown nav-item nav-item2" style="margin-top: 7px;">
-                        <a href=""><img src="Pictures/Icon awesome-shopping-basket.svg" alt="" style="max-width: 80%; max-height:80%"></a>
+                        <a href=""><img src="Pictures/Icon awesome-shopping-basket.svg" alt=""
+                                style="max-width: 80%; max-height:80%"></a>
                     </li>
                     <li class="nav-item dropdown nav-item2" style="margin-top: 4px;">
-                        <a class="nav-link" href="#" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        <a class="nav-link" href="#" id="navbarDropdown" role="button" aria-haspopup="true"
+                            aria-expanded="false">
                             <img src="Pictures/Icon feather-menu.svg" alt="" style="max-width: 80%; max-height:80%">
                         </a>
                         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
@@ -59,20 +66,32 @@
 
 
 
-    <main class="container">
+    <main class="row" style="width: 100vw; height: 100vh;">
 
-        <!--Form to add new user to data base-->
-        <form action="phpscripts/createNewUser.php" method="post">
-            <p>Ihr Name: <input type="text" name="name" /></p>
-            <p>Ihr Vorname: <input type="text" name="preName" /></p>
-            <p>Ihr Geburtsdatum: <input type="text" name="birthday" /></p>
-            <p>Ihre Land: <input type="text" name="country" /></p>
-            <p>Ihre Adresse: <input type="text" name="adress" /></p>
-            <p>Ihre Email: <input type="text" name="email" /></p>
-            <p>Ihr Passwort: <input type="text" name="password" /></p>
-            <p>Ihre Postleitzahl: <input type="text" name="zip" /></p>
-            <p><input type="submit" /></p>
-        </form>
+        <div class="col-3" id="index-left-img">
+            
+        </div>
+
+        <div class="col-6" id="index-main">
+            <!--Form to add new user to data base-->
+            <form action="phpscripts/createNewUser.php" method="post">
+                <p>Ihr Name: <input type="text" name="name" /></p>
+                <p>Ihr Vorname: <input type="text" name="preName" /></p>
+                <p>Ihr Geburtsdatum: <input type="text" name="birthday" /></p>
+                <p>Ihre Land: <input type="text" name="country" /></p>
+                <p>Ihre Adresse: <input type="text" name="adress" /></p>
+                <p>Ihre Email: <input type="text" name="email" /></p>
+                <p>Ihr Passwort: <input type="text" name="password" /></p>
+                <p>Ihre Postleitzahl: <input type="text" name="zip" /></p>
+                <p><input type="submit" /></p>
+            </form>
+        </div>
+
+        <div class="col-3" id="index-right-backimg">
+
+        </div>
+
+
 
     </main>
 </body>

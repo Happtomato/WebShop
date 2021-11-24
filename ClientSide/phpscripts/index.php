@@ -68,6 +68,8 @@ if(!empty($_GET["action"])) {
 <HEAD>
     <TITLE>Simple PHP Shopping Cart</TITLE>
     <link href="phpStyle.css" type="text/css" rel="stylesheet" />
+    <link href="\stylesheet.css" type="text/css" rel="" />
+    
 </HEAD>
 <BODY>
 
@@ -128,9 +130,6 @@ if(!empty($_GET["action"])) {
     }
     ?>
 </div>
-
-
-<!-- List of Products -->
 
 
 <!-- List of Products -->
