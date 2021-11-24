@@ -120,6 +120,8 @@ if(!empty($_GET["action"])) {
         </nav>
     </header>
 
+<main>
+        
 <!-- Shopping Cart -->
 <div id="shopping-cart">
     <div class="txt-heading">Shopping Cart</div>
@@ -203,5 +205,6 @@ if(!empty($_GET["action"])) {
     ?>
 </div>
 
+</main>
 </BODY>
 </HTML>
