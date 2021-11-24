@@ -1,19 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="caba9bfc-3ac8-4b48-a9e8-e50ea4852e19" name="Changes" comment="Implementation of Shopping cart and product list">
-      <change afterPath="$PROJECT_DIR$/ClientSide/phpscripts/checkout.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ClientSide/thankYou.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/ce8fd048-9a16-4cca-99ba-e45f242b5315.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/ce8fd048-9a16-4cca-99ba-e45f242b5315.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ClientSide/account.html" beforeDir="false" afterPath="$PROJECT_DIR$/ClientSide/account.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ClientSide/phpscripts/createNewUser.php" beforeDir="false" afterPath="$PROJECT_DIR$/ClientSide/phpscripts/createNewUser.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ClientSide/phpscripts/delete.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ClientSide/phpscripts/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/ClientSide/phpscripts/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ClientSide/phpscripts/tblproduct.sql" beforeDir="false" afterPath="$PROJECT_DIR$/ClientSide/phpscripts/tblproduct.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ClientSide/sript.js" beforeDir="false" afterPath="$PROJECT_DIR$/ClientSide/sript.js" afterDir="false" />
-    </list>
+    <list default="true" id="caba9bfc-3ac8-4b48-a9e8-e50ea4852e19" name="Changes" comment="Implementation of Shopping cart and product list" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
