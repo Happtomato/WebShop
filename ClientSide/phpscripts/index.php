@@ -88,6 +88,9 @@ if(!empty($_GET["action"])) {
             })
         });
     </script>
+    <style>
+        html, body { overflow: visible !important; }
+    </style>
 </HEAD>
 <BODY>
 
