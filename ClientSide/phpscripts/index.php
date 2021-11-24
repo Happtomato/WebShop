@@ -72,6 +72,12 @@ if(!empty($_GET["action"])) {
 <HEAD>
     <TITLE>Simple PHP Shopping Cart</TITLE>
     <link href="phpStyle.css" type="text/css" rel="stylesheet" />
+<<<<<<< Updated upstream
+    <link href="../stylesheet.css" type="text/css" rel="" />
+
+=======
+    <link href="../sript.js" type="javascript" rel="script">
+>>>>>>> Stashed changes
 </HEAD>
 <BODY>
 
