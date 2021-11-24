@@ -81,6 +81,13 @@ if(!empty($_GET["action"])) {
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300;400;600&display=swap" rel="stylesheet">
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("#navbarDropdown").click(function() {
+                $(".dropdown-menu").toggle();
+            })
+        });
+    </script>
 </HEAD>
 <BODY>
 
@@ -92,7 +99,7 @@ if(!empty($_GET["action"])) {
 
             <div class="collapse navbar-collapse width">
                 <ul class="navbar-nav mr-auto">
-                    <li class="nav-item nav-item2 btn-hovereffect rounded-pill"><a class="nav-link" href="index.html">Welcome</a></li>
+                    <li class="nav-item nav-item2 btn-hovereffect rounded-pill"><a class="nav-link" href="/index.html">Welcome</a></li>
                     <li class="nav-item nav-item2 btn-hovereffect rounded-pill active-btn"><a class="nav-link" href="/phpscripts/index.php">Shop</a>
                     </li>
                     <li class="nav-item nav-item2 btn-hovereffect rounded-pill"><a class="nav-link" href="/account.html">Account</a>
@@ -100,7 +107,7 @@ if(!empty($_GET["action"])) {
                 </ul>
                 <ul class="navbar-nav ml-auto icon-resize">
                     <li class="dropdown nav-item nav-item2" style="margin-top: 10px;">
-                        <a href=""><img src="/Pictures/Icon material-account-circle.svg" alt="" style="max-width: 80%; max-height:80%"></a>
+                        <a href="/account.html"><img src="/Pictures/Icon material-account-circle.svg" alt="" style="max-width: 80%; max-height:80%"></a>
                     </li>
                     <li class="dropdown nav-item nav-item2" style="margin-top: 7px;">
                         <a href=""><img src="/Pictures/Icon awesome-shopping-basket.svg" alt="" style="max-width: 80%; max-height:80%"></a>
