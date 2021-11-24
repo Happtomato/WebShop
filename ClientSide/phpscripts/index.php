@@ -4,6 +4,7 @@ require_once("dbcontroller.php");
 $db_handle = new DBController();
 
 //manipulate the shopping cart
+
 if(!empty($_GET["action"])) {
 
 
@@ -57,9 +58,12 @@ if(!empty($_GET["action"])) {
             break;
         //remove session if the shopping cart is empty
         case "empty":
-            unset($_SESSION["cart_item"]);
-            break;
-    }
+
+            echo "<td><a onClick=\"javascript: return confirm('Please confirm deletion');\" href='delete.php'></a></td><tr>";
+                unset($_SESSION["cart_item"]);
+                break;
+            }
+
 }
 ?>
 
@@ -68,8 +72,12 @@ if(!empty($_GET["action"])) {
 <HEAD>
     <TITLE>Simple PHP Shopping Cart</TITLE>
     <link href="phpStyle.css" type="text/css" rel="stylesheet" />
+<<<<<<< Updated upstream
     <link href="\stylesheet.css" type="text/css" rel="" />
     
+=======
+    <link href="../sript.js" type="javascript" rel="script">
+>>>>>>> Stashed changes
 </HEAD>
 <BODY>
 
@@ -77,7 +85,7 @@ if(!empty($_GET["action"])) {
 <div id="shopping-cart">
     <div class="txt-heading">Shopping Cart</div>
 
-    <a id="btnEmpty" href="index.php?action=empty">Empty Cart</a>
+    <button onclick="confirmation()">Empty Cart</button>
     <?php
     if(isset($_SESSION["cart_item"])){
         $total_quantity = 0;
@@ -131,7 +139,10 @@ if(!empty($_GET["action"])) {
     ?>
 </div>
 
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
 <!-- List of Products -->
 
 <div id="product-grid">
