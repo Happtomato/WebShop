@@ -4,7 +4,7 @@ body {
     width: 100%;
     padding: 0;
     margin: 0;
-    overflow: hidden;
+    overflow: hidden !important;
 }
 
 .nav-item2 {
@@ -38,6 +38,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
 #index-main-img {
@@ -50,6 +51,7 @@ body {
     position: sticky;
     top: var(--offset);
     background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #index-right-textblock {
@@ -74,6 +76,8 @@ body {
     --offset: var(--space);
     position: sticky;
     top: var(--offset);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #index-left-logo {
@@ -97,4 +101,9 @@ body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-decoration: underline;
     text-decoration-color: red;
+}
+
+#thankyou-text {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 100px;
 }
