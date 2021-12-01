@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="caba9bfc-3ac8-4b48-a9e8-e50ea4852e19" name="Changes" comment="Implementation of Shopping cart and product list" />
+    <list default="true" id="caba9bfc-3ac8-4b48-a9e8-e50ea4852e19" name="Changes" comment="Implementation of Shopping cart and product list">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/ce8fd048-9a16-4cca-99ba-e45f242b5315.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/ce8fd048-9a16-4cca-99ba-e45f242b5315.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -81,6 +84,11 @@
       <workItem from="1637333913420" duration="4008000" />
       <workItem from="1637650086678" duration="44000" />
       <workItem from="1637736754208" duration="11040000" />
+      <workItem from="1637750285277" duration="66000" />
+      <workItem from="1637865255238" duration="81000" />
+      <workItem from="1637865531670" duration="582000" />
+      <workItem from="1637935898868" duration="363000" />
+      <workItem from="1637937403597" duration="419000" />
     </task>
     <task id="LOCAL-00001" summary="Rnd Stuff">
       <created>1637134714898</created>
