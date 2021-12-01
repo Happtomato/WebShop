@@ -129,11 +129,11 @@ if(!empty($_GET["action"])) {
 
 <main class="row" style="width: 100vw; height: 100vh;">
         
-<div class="col-3" id="index-left-img">
+<div class="col-2" id="index-left-img">
             
 </div>
 
-<div class="col-6" id="">   <!-- Start of middle col -->
+<div class="col-8" id="">   <!-- Start of middle col -->
     <!-- Shopping Cart -->
 <div id="shopping-cart">
     <div class="txt-heading">Shopping Cart</div>
@@ -220,7 +220,7 @@ if(!empty($_GET["action"])) {
 </div>
 </div> <!-- End middle col -->
 
-<div class="col-3" id="index-right-backimg">
+<div class="col-2" id="index-right-backimg">
 
 </div>
 
