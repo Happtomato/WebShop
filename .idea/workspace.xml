@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="caba9bfc-3ac8-4b48-a9e8-e50ea4852e19" name="Changes" comment="Implementation of Shopping cart and product list" />
+    <list default="true" id="caba9bfc-3ac8-4b48-a9e8-e50ea4852e19" name="Changes" comment="idea stuff">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ClientSide/account.html" beforeDir="false" afterPath="$PROJECT_DIR$/ClientSide/account.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ClientSide/phpscripts/checkout.php" beforeDir="false" afterPath="$PROJECT_DIR$/ClientSide/phpscripts/checkout.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ClientSide/phpscripts/createNewUser.php" beforeDir="false" afterPath="$PROJECT_DIR$/ClientSide/phpscripts/createNewUser.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -81,6 +86,12 @@
       <workItem from="1637333913420" duration="4008000" />
       <workItem from="1637650086678" duration="44000" />
       <workItem from="1637736754208" duration="11040000" />
+      <workItem from="1637750285277" duration="66000" />
+      <workItem from="1637865255238" duration="81000" />
+      <workItem from="1637865531670" duration="582000" />
+      <workItem from="1637935898868" duration="363000" />
+      <workItem from="1637937403597" duration="419000" />
+      <workItem from="1638338901248" duration="3473000" />
     </task>
     <task id="LOCAL-00001" summary="Rnd Stuff">
       <created>1637134714898</created>
@@ -103,7 +114,14 @@
       <option name="project" value="LOCAL" />
       <updated>1637145168660</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="idea stuff">
+      <created>1638338954559</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1638338954559</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -124,6 +142,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Rnd Stuff" />
     <MESSAGE value="Implementation of Shopping cart and product list" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implementation of Shopping cart and product list" />
+    <MESSAGE value="idea stuff" />
+    <option name="LAST_COMMIT_MESSAGE" value="idea stuff" />
   </component>
 </project>

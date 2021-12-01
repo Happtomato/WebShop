@@ -1,7 +1,9 @@
 <?php
 
+session_start();
 
 require_once("createNewUser.php");
+
 
 $userName = $_POST['name'];
 $userPreName = $_POST['preName'];
@@ -9,7 +11,7 @@ $userBirthday = $_POST['birthday'];
 $userCountry = $_POST['country'];
 $userAdress = $_POST['adress'];
 $userEmail = $_POST['email'];
-$userPassword = $_POST['password'];
+$userPassword = $_POST['passwd'];
 $userZip = $_POST['zip'];
 
 //create a new user
@@ -28,18 +30,31 @@ if ($conn->connect_error) {
 }
 
 if(isset($_SESSION["cart_item"])) {
+    echo "Session ist da";
+
     foreach ($_SESSION["cart_item"] as $item) {
-        $item = $item["name"];
+        $itemName = $item["name"];
+        $quantity = $item["quantity"];
+        $datum = new DateTime();
+        $date = $datum->format('Y-m-d H:i:s');
 
-        $date = date("Y-m-d H:i:s");
+        echo "wird wiederholt";
 
-        $sql = "INSERT INTO userOrders (Item_ID, User_ID, OrderDate)
-            VALUES ('$item','$userName', '$date')";
+        $sql = "INSERT INTO userOrders (Item_ID, User_ID, ItemQuantity, OrderDate, UserName)
+            VALUES ('$itemName','$userName', '$quantity', '$date', '$userPreName')";
+
+        if ($conn->query($sql) === TRUE) {
+            echo "New record created successfully";
+        } else {
+            echo "Error: " . $sql . "<br>" . $conn->error;
+        }
+
     }
+
         unset($_SESSION["cart_item"]);
 }
     $conn->close();
 
-header("Location: ../index.html");
+header("Location: ../thankYou.html");
 
 
