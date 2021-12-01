@@ -49,6 +49,7 @@ body {
     --offset: var(--space);
     position: sticky;
     top: var(--offset);
+    background-repeat: no-repeat;
 }
 
 #index-right-textblock {

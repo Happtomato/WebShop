@@ -1,12 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="stylesheet.css">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <title>Account</title>
+
+    <script>
+        $(document).ready(function() {
+            $("#navbarDropdown").click(function() {
+                $(".dropdown-menu").toggle();
+            })
+        });
+    </script>
+
 </head>
+
 <body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-light bg-light">
+            <a class="navbar-brand" href="index.html">
+                <img src="Pictures/c. b..svg" width="30" height="30" alt="">
+            </a>
+            <div class="collapse navbar-collapse width">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item nav-item2 btn-hovereffect rounded-pill"><a class="nav-link" href="index.html">Welcome</a></li>
+                    <li class="nav-item nav-item2 btn-hovereffect rounded-pill"><a class="nav-link" href="phpscripts/index.php">Shop</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ml-auto icon-resize">
+                    <li class="dropdown nav-item nav-item2" style="margin-top: 7px;">
+                        <a href=""><img src="Pictures/Icon awesome-shopping-basket.svg" alt="" style="max-width: 80%; max-height:80%"></a>
+                    </li>
+                    <li class="nav-item dropdown nav-item2" style="margin-top: 4px;">
+                        <a class="nav-link" href="#" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                            <img src="Pictures/Icon feather-menu.svg" alt="" style="max-width: 80%; max-height:80%">
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="index.html">Welcome</a>
+                            <a class="dropdown-item" href="phpscripts/index.php">Shop</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
 
-    <p size="100" >DaNkE </p>
 
+
+
+    <main class="row" style="width: 100vw; height: 100vh;">
+
+        <div class="col-3" id="index-left-img">
+
+        </div>
+
+        <div class="col-6" id="index-main">
+            <p>Danke</p>
+        </div>
+
+        <div class="col-3" id="index-right-backimg">
+
+        </div>
+
+
+
+    </main>
 </body>
+
 </html>

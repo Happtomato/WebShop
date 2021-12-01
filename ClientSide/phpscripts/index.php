@@ -108,13 +108,8 @@ if(!empty($_GET["action"])) {
                     <li class="nav-item nav-item2 btn-hovereffect rounded-pill"><a class="nav-link" href="/index.html">Welcome</a></li>
                     <li class="nav-item nav-item2 btn-hovereffect rounded-pill active-btn"><a class="nav-link" href="/phpscripts/index.php">Shop</a>
                     </li>
-                    <li class="nav-item nav-item2 btn-hovereffect rounded-pill"><a class="nav-link" href="/account.html">Account</a>
-                    </li>
                 </ul>
                 <ul class="navbar-nav ml-auto icon-resize">
-                    <li class="dropdown nav-item nav-item2" style="margin-top: 10px;">
-                        <a href="/account.html"><img src="/Pictures/Icon material-account-circle.svg" alt="" style="max-width: 80%; max-height:80%"></a>
-                    </li>
                     <li class="dropdown nav-item nav-item2" style="margin-top: 7px;">
                         <a href=""><img src="/Pictures/Icon awesome-shopping-basket.svg" alt="" style="max-width: 80%; max-height:80%"></a>
                     </li>
@@ -125,7 +120,6 @@ if(!empty($_GET["action"])) {
                         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item" href="/index.html">Welcome</a>
                             <a class="dropdown-item" href="/phpscripts/index.php">Shop</a>
-                            <a class="dropdown-item" href="/account.html">Account</a>
                         </div>
                     </li>
                 </ul>
