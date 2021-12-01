@@ -3,9 +3,14 @@
   <component name="ChangeListManager">
     <list default="true" id="caba9bfc-3ac8-4b48-a9e8-e50ea4852e19" name="Changes" comment="idea stuff">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ClientSide/account.html" beforeDir="false" afterPath="$PROJECT_DIR$/ClientSide/account.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ClientSide/phpscripts/checkout.php" beforeDir="false" afterPath="$PROJECT_DIR$/ClientSide/phpscripts/checkout.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ClientSide/phpscripts/createNewUser.php" beforeDir="false" afterPath="$PROJECT_DIR$/ClientSide/phpscripts/createNewUser.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ClientSide/Pictures/Fanta.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ClientSide/Pictures/FantaBlau.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ClientSide/Pictures/Knoppers.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ClientSide/Pictures/Snickers.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ClientSide/Pictures/Sprite.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ClientSide/Pictures/Twix.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ClientSide/Pictures/cola.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ClientSide/phpscripts/tblproduct.sql" beforeDir="false" afterPath="$PROJECT_DIR$/ClientSide/phpscripts/tblproduct.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,6 +97,8 @@
       <workItem from="1637935898868" duration="363000" />
       <workItem from="1637937403597" duration="419000" />
       <workItem from="1638338901248" duration="3473000" />
+      <workItem from="1638343228074" duration="396000" />
+      <workItem from="1638344844205" duration="1637000" />
     </task>
     <task id="LOCAL-00001" summary="Rnd Stuff">
       <created>1637134714898</created>

@@ -1,15 +1,17 @@
 
 INSERT INTO `inventory` (`ItemName`, `ItemCode`, `ItemImage`, `ItemQuantity`, `ItemPrice`) VALUES
-                                                                                               ( 'Cola', '1001', '../Pictures/cola.png', 1000.00, 3.50),
-                                                                                               ( 'Fanta', '1002' ,'../Pictures/Fanta.png', 2000.00, 3.50),
-                                                                                               ( 'Fanta Blau', '1003', '../Pictures/FantaBlau.jpg', 500.00, 3.50),
-                                                                                               ( 'Sprite', '1004', '../Pictures/Sprite.png', 800.00, 3.50),
-( 'Snickers', '1005', '../Pictures/Snickers.jpg', 800.00, 3.50),
-( 'Twix', '1006', '../Pictures/Twix.jpg', 800.00, 3.50),
-( 'Koppers', '1007', '../Pictures/Knoppers.png', 800.00, 3.50);
+('Ramune', '1001','../Pictures/Ramune.jpg', 1000, 3.50),
+('Fanta-Berry', '1002','../Pictures/fantaBerry.jpg', 2000, 2.50),
+('Fanta-Cassis', '1003','../Pictures/fantaCassis.jpg', 2500, 2.50),
+('MountainDew-Major-Melon', '1004','../Pictures/mountainDewMajorMelon.jpg', 3000, 2.50),
+('Sprite-Cranberry', '1005','../Pictures/spriteCranberry.jpg', 2500, 2.50),
+('Ananaskuchen', '1006','../Pictures/ananasKuchen.jpg', 200, 4.50),
+('Haribo-Watermelon', '1007','../Pictures/HariboWatermelon.png', 400, 3.50),
+('KitKat-fruity-Cereal', '1008','../Pictures/kitkatfruitycereal.jpg', 500, 3.50),
+('Pocky-Strawberry', '1009','../Pictures/pockystrawberry.jpg', 800, 3.50),
+('Takis-fuego', '1010','../Pictures/TakisFuego.png', 1000, 3.50);
 COMMIT;
 
-delete from inventory;
-
-
 SELECT * from inventory;
+
+delete from inventory
